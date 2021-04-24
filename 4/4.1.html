@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>Practical 4.1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffe8c5;
+        }
+
+        main {
+            text-align: justify;
+            width: 95vw;
+            height: 95vh;
+            padding: 1rem;
+        }
+
+        .wrap_one {
+            display: flex;
+            width: 100%;
+            height: 30%;
+        }
+
+        .title_div {
+            width: 50%;
+            display: grid;
+            place-items: center;
+        }
+
+        .title_div h1 {
+            font-size: 3rem;
+            color: red;
+            text-align: center;
+        }
+
+        .title_div h1 span {
+            font-size: 2.3rem;
+            display: block;
+            color: black;
+        }
+
+        .para_div {
+            width: 50%;
+            font-size: 1.2rem;
+            display: grid;
+            place-items: center;
+        }
+
+
+        .wrap_two {
+            width: 100%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            overflow: hidden;
+        }
+
+        .list_div {
+            grid-column: 1/2;
+            grid-row: 1/4;
+            padding: 1rem;
+            background-color: #ffebcd;
+
+        }
+
+        .list_div ol {
+            list-style-position: inside;
+        }
+
+        .list_div ol li {
+            margin-bottom: .75rem;
+        }
+
+        .img_div {
+            grid-column: 2/5;
+            grid-row: 1/3;
+            padding: 1rem;
+            overflow: hidden;
+        }
+
+        .img_div img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .last_div {
+            grid-column: 2/5;
+            grid-row: 3/4;
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrap_one">
+            <div class="title_div">
+                <h1>KHELLO INDIA, <span>A MISSION TO HELP</span> YOUNG TALENT</h1>
+            </div>
+
+            <div class="para_div">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequuntur facilis maxime possimus
+                    eaque
+                    ad dolor recusandae tempore magnam eveniet asperiores eligendi dolore, aliquid voluptatem sapiente
+                    reprehenderit molestiae, cupiditate placeat. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Veniam, suscipit?</p>
+            </div>
+        </div>
+
+        <div class="wrap_two">
+            <div class="list_div">
+                <ol>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at nisi, rerum voluptates facere
+                        beatae.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at nisi.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at nisi, rerum voluptates
+                        facere.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at nisi, rerum voluptates facere
+                        beatae.</li>
+                </ol>
+            </div>
+
+            <div class="img_div">
+                <img src="4.1.jpg" alt="photo">
+            </div>
+
+            <div class="last_div">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, nostrum molestias modi est
+                    inventore
+                    consectetur laboriosam omnis facere aperiam odio.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, nostrum molestias modi est
+                    inventore
+                    consectetur laboriosam omnis facere aperiam odio.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, nostrum molestias modi est
+                    inventore
+                    consectetur laboriosam omnis facere aperiam odio.</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

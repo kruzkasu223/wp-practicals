@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.wrap_one {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    padding: 0 3rem 0 8rem;
+}
+
+.wrap_one h2 {
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.wrap_two {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    padding: 0 10rem 0 3rem;
+}
+
+.main_login_wrap {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+form > * {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.form_wrap p {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+form button {
+    border: none;
+    font-size: 1rem;
+    background-color: #1977f3;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    filter: brightness(120%);
+}
+
+.create_new_div {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #bbb;
+}
+
+.create_new_div button {
+    width: 100%;
+}
+
+.create_new_div button {
+    border: none;
+    font-size: 1rem;
+    background-color: #4cb933;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.create_new_div button:hover {
+    filter: brightness(120%);
+}
+
+.create_page_div {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+.create_page_div a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.create_page_div a:hover {
+    text-decoration: underline;
+}
