@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Practical 5.1</title>
+</head>
+
+<body>
+    <form method="POST" onsubmit="return login()">
+        <p>
+            <input type="text" name="username" id="username" placeholder="Username">
+        </p>
+        <p>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </p>
+        <p>
+            <button type="submit">LOG IN</button>
+        </p>
+    </form>
+
+
+    <script>
+        function login() {
+            event.preventDefault();
+            /*
+            for example and simplicity we have to 
+            assume values of username and password...
+            */
+            const username = 'username'
+            const password = 'password'
+
+            const uname = document.querySelector('#username').value
+            const pword = document.querySelector('#password').value
+
+            if (uname == username && pword == password) {
+                window.location.href = "/5/5.1.2.html";
+                return true
+            } else {
+                alert('Your entered username or password is not correct.')
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

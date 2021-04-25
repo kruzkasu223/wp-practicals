@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Practical 5.2</title>
+</head>
+
+<body>
+    <p>
+        <input type="number" id="phone" placeholder="Phone Number">
+    </p>
+    <p>
+        <input type="text" id="email" placeholder="Email">
+    </p>
+    <button onclick="validate()">Validate</button>
+
+    <script>
+        function validate() {
+            event.preventDefault()
+            const phone = document.querySelector('#phone').value
+            const email = document.querySelector('#email').value
+
+            if ((phone[0] == 8 || phone[0] == 9) && email.includes('@') && email.includes('.')) {
+                alert('Phone Number and Email are Valid.')
+            } else {
+                alert('Phone Number or Email are not Valid.')
+            }
+        }
+    </script>
+</body>
+
+</html>

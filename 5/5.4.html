@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Practical 5.4</title>
+</head>
+
+<body>
+
+    <p>
+        <input type="text" id="string" placeholder="Enter String">
+    </p>
+    <p>
+        <input type="text" id="word" placeholder="Enter Word to Search in String">
+    </p>
+    <button onclick="searchWord()">Submit</button>
+    <p id="output_p"></p>
+
+    <script>
+        function searchWord() {
+            event.preventDefault()
+
+            const string = document.querySelector('#string').value
+            const word = document.querySelector('#word').value
+            let outputp = document.querySelector('#output_p')
+
+            let copyword = 0;
+            let temp = new Array();
+            temp = string.split(" ");
+
+            for (let i = 0; i < temp.length; ++i) {
+                if (word.match(temp[i])) {
+                    copyword = word.match(temp[i]);
+                    let pos = temp.indexOf(word);
+                    outputp.innerText = `'${word}' found in your String at index: ${pos}`
+                    copyword = -1;
+                }
+            }
+            if (copyword == 0) {
+                outputp.innerText = `'${word}' not found in your String`
+            }
+        }
+    </script>
+</body onload=containsAny()>
+
+</html>

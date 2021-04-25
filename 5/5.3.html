@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Practical 5.3</title>
+</head>
+
+<body>
+
+    <p>
+        <input type="number" id="date" placeholder="Enter Birth Date">
+    </p>
+    <p>
+        <input type="number" id="month" placeholder="Enter Birth Month">
+    </p>
+    <button onclick="getDays()">Submit</button>
+    <p id="days_left"></p>
+
+    <script>
+        function getDays() {
+            event.preventDefault();
+            today = new Date();
+            const bdate = document.querySelector('#date').value
+            const bmonth = document.querySelector('#month').value - 1
+            const bday = new Date(today.getFullYear(), bmonth, bdate);
+            let daysleftp = document.querySelector('#days_left')
+
+            if (today.getMonth() == bmonth && today.getDate() > bdate) {
+                bday.setFullYear(bday.getFullYear() + 1);
+            }
+            var one_day = 1000 * 60 * 60 * 24;
+            daysleft = Math.ceil((bday.getTime() - today.getTime()) / (one_day))
+
+            if (daysleft.toString()[0] == '-') {
+                daysleft = daysleft + 365
+            }
+
+            daysleftp.innerText = daysleft + " days left until Your Birth Day!"
+        }
+    </script>
+</body>
+
+</html>

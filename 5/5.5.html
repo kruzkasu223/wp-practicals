@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Practical 5.5</title>
+</head>
+
+<body>
+
+    <p>
+        <input type="text" id="word" placeholder="Enter any Word">
+    </p>
+    <button onclick="runFunc()">Submit</button>
+    <p id="output_p"></p>
+
+    <script>
+        function runFunc() {
+            const word = document.querySelector('#word').value
+            let outputp = document.querySelector('#output_p')
+            let mychar = []
+
+            for (let i = 1; i <= word.length; i += 2) {
+                mychar.push(word.charAt(i - 1))
+            }
+            outputp.innerText = "Characters available at odd Positions: " + mychar
+        }
+    </script>
+</body>
+
+</html>
