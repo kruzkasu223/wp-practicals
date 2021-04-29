@@ -5,7 +5,7 @@
 </head>
 
 <body>
-	<form action="/7/7.5.2.php" method="post">
+	<form action="/7.5.2.php" method="post">
 		<p>
 			Username: <input name="username" type="text" value="<?php if (isset($_COOKIE["username"])) {
 																	echo $_COOKIE["username"];

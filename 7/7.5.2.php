@@ -5,7 +5,7 @@
 </head>
 
 <body>
-	<p><a href="/7/7.5.php">Go to Login Page</a></p>
+	<p><a href="/7.5.php">Go to Login Page</a></p>
 	<?php
 	if (!empty($_POST["remember"])) {
 		setcookie("username", $_POST["username"], time() + 3600);

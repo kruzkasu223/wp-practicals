@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <form method="post" action="http://localhost:8000/7/7.4.2.php">
+    <form method="post" action="http://localhost:8000/7.4.2.php">
         <p>Enter Employee ID</p>
         <input name="empID[]" size="5" type="number" />
         <input name="empID[]" size="5" type="number" />
